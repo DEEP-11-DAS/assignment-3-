@@ -1,0 +1,113 @@
+{
+ "selected_z": 512,
+ "test_mse_clean_ae": {
+  "32": 0.011395771987736225,
+  "128": 0.004513311665505171,
+  "512": 0.0014539610128849745
+ },
+ "classifier_rows": [
+  {
+   "setting": "clean images",
+   "test_acc": 0.9265999794006348,
+   "mse_vs_clean": 0.0
+  },
+  {
+   "setting": "clean-AE(clean)",
+   "test_acc": 0.7414999604225159,
+   "mse_vs_clean": 0.0014539610128849745
+  },
+  {
+   "setting": "DAE(clean)",
+   "test_acc": 0.46859997510910034,
+   "mse_vs_clean": 0.0036931198555976152
+  },
+  {
+   "setting": "sigma=0.2: corrupted",
+   "test_acc": 0.10080000013113022,
+   "mse_vs_clean": 0.03329818323254585
+  },
+  {
+   "setting": "sigma=0.2: clean-AE(corrupted)",
+   "test_acc": 0.461899995803833,
+   "mse_vs_clean": 0.006236642599105835
+  },
+  {
+   "setting": "sigma=0.2: DAE(corrupted)",
+   "test_acc": 0.5001999735832214,
+   "mse_vs_clean": 0.004059568513184786
+  },
+  {
+   "setting": "sigma=0.1: corrupted",
+   "test_acc": 0.19509999454021454,
+   "mse_vs_clean": 0.009304970502853394
+  },
+  {
+   "setting": "sigma=0.1: clean-AE(corrupted)",
+   "test_acc": 0.6624999642372131,
+   "mse_vs_clean": 0.002668467117473483
+  },
+  {
+   "setting": "sigma=0.1: DAE(corrupted)",
+   "test_acc": 0.4829999804496765,
+   "mse_vs_clean": 0.003549622604623437
+  },
+  {
+   "setting": "sigma=0.3: corrupted",
+   "test_acc": 0.09999999403953552,
+   "mse_vs_clean": 0.06422565132379532
+  },
+  {
+   "setting": "sigma=0.3: clean-AE(corrupted)",
+   "test_acc": 0.32249999046325684,
+   "mse_vs_clean": 0.011694708839058876
+  },
+  {
+   "setting": "sigma=0.3: DAE(corrupted)",
+   "test_acc": 0.42569997906684875,
+   "mse_vs_clean": 0.006712018977850676
+  }
+ ],
+ "recovered_fraction": 0.48365219602620596,
+ "probes": {
+  "AE z=32": {
+   "val_acc": 0.38599997758865356,
+   "wd": 0.01,
+   "test_acc": 0.3840999901294708
+  },
+  "AE z=128": {
+   "val_acc": 0.399399995803833,
+   "wd": 0.001,
+   "test_acc": 0.398499995470047
+  },
+  "AE z=512": {
+   "val_acc": 0.5008000135421753,
+   "wd": 0.01,
+   "test_acc": 0.5044999718666077
+  },
+  "DAE z=512": {
+   "val_acc": 0.5565999746322632,
+   "wd": 0.001,
+   "test_acc": 0.5584999918937683
+  },
+  "random encoder z=512": {
+   "val_acc": 0.45739999413490295,
+   "wd": 0.01,
+   "test_acc": 0.46709999442100525
+  },
+  "raw pixels (3072-d)": {
+   "val_acc": 0.3763999938964844,
+   "wd": 0.01,
+   "test_acc": 0.3775999844074249
+  }
+ },
+ "params": {
+  "32": 1584419,
+  "128": 2370947,
+  "512": 5517059
+ },
+ "val_mse": {
+  "32": 0.011416934430599213,
+  "128": 0.0045313118025660515,
+  "512": 0.001453680102713406
+ }
+}
